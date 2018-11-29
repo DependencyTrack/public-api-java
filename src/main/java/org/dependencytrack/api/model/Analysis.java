@@ -20,7 +20,7 @@ public class Analysis {
     private final String state;
     private final boolean isSuppressed;
 
-    public Analysis(String state, boolean isSuppressed) {
+    public Analysis(final String state, final boolean isSuppressed) {
         this.state = state;
         this.isSuppressed = isSuppressed;
     }

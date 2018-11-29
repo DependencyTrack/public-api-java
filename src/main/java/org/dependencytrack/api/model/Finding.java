@@ -22,7 +22,7 @@ public class Finding {
     private final Analysis analysis;
     private final String matrix;
 
-    public Finding(Component component, Vulnerability vulnerability, Analysis analysis, String matrix) {
+    public Finding(final Component component, final Vulnerability vulnerability, final Analysis analysis, final String matrix) {
         this.component = component;
         this.vulnerability = vulnerability;
         this.analysis = analysis;

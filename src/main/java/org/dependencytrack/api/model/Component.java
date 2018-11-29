@@ -23,7 +23,7 @@ public class Component {
     private final String version;
     private final String purl;
 
-    public Component(String uuid, String name, String group, String version, String purl) {
+    public Component(final String uuid, final String name, final String group, final String version, final String purl) {
         this.uuid = uuid;
         this.name = name;
         this.group = group;
