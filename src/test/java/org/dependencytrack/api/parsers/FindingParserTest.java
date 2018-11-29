@@ -72,6 +72,7 @@ public class FindingParserTest {
 
         Assert.assertEquals("b815b581-fec1-4374-a871-68862a8f8d52", component.getUuid());
         Assert.assertEquals("timespan", component.getName());
+        Assert.assertNull(component.getGroup());
         Assert.assertEquals("2.3.0", component.getVersion());
         Assert.assertEquals("pkg:npm/timespan@2.3.0", component.getPurl());
 
