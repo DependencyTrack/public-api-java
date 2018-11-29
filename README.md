@@ -6,6 +6,17 @@ Dependency-Track Public Java API
 
 The Dependency-Track Public Java API consists of model classes and parsers to aid in integration with Dependency-Track.
 
+Maven Usage
+-------------------
+
+```xml
+<dependency>
+    <groupId>org.dependencytrack</groupId>
+    <artifactId>public-api-java</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
 Requirements
 -------------------
 
