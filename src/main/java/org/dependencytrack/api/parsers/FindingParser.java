@@ -30,11 +30,12 @@ import javax.json.JsonStructure;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.io.StringReader;
 import java.util.ArrayList;
 
 public class FindingParser {
 
-    private final InputStream jsonResponseInputStream;
+    private JsonReader jsonReader;
     private Meta meta;
     private Project project;
     private ArrayList<Finding> findings;
@@ -45,13 +46,18 @@ public class FindingParser {
         FINDING_PACKAGING_FORMAT
     }
 
-    public FindingParser(InputStream jsonResponseInputStream) {
-        this.jsonResponseInputStream = jsonResponseInputStream;
+    protected FindingParser() { }
+
+    public FindingParser(final String jsonString) {
+        jsonReader = Json.createReader(new StringReader(jsonString));
+    }
+
+    public FindingParser(final InputStream jsonResponseInputStream) {
+        jsonReader = Json.createReader(jsonResponseInputStream);
     }
 
     public FindingParser parse() {
-        final JsonReader reader = Json.createReader(jsonResponseInputStream);
-        final JsonStructure structure = reader.read();
+        final JsonStructure structure = jsonReader.read();
         if (structure instanceof JsonArray) {
             this.format = Format.FINDING_API;
             this.findings = parseFindings((JsonArray)structure);
