@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.dependencytrack.publicapi.parsers;
+package org.dependencytrack.api.parsers;
 
-import org.dependencytrack.publicapi.model.Analysis;
-import org.dependencytrack.publicapi.model.Component;
-import org.dependencytrack.publicapi.model.Finding;
-import org.dependencytrack.publicapi.model.Meta;
-import org.dependencytrack.publicapi.model.Project;
-import org.dependencytrack.publicapi.model.Severity;
-import org.dependencytrack.publicapi.model.Vulnerability;
+import org.dependencytrack.api.model.Analysis;
+import org.dependencytrack.api.model.Component;
+import org.dependencytrack.api.model.Finding;
+import org.dependencytrack.api.model.Meta;
+import org.dependencytrack.api.model.Project;
+import org.dependencytrack.api.model.Severity;
+import org.dependencytrack.api.model.Vulnerability;
 import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonObject;

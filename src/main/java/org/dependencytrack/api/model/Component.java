@@ -13,21 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.dependencytrack.publicapi.model;
+package org.dependencytrack.api.model;
 
-public class Project {
+public class Component {
 
     private final String uuid;
     private final String name;
+    private final String group;
     private final String version;
-    private final String description;
     private final String purl;
 
-    public Project(final String uuid, final String name, final String version, final String description, final String purl) {
+    public Component(String uuid, String name, String group, String version, String purl) {
         this.uuid = uuid;
         this.name = name;
+        this.group = group;
         this.version = version;
-        this.description = description;
         this.purl = purl;
     }
 
@@ -39,12 +39,12 @@ public class Project {
         return name;
     }
 
-    public String getVersion() {
-        return version;
+    public String getGroup() {
+        return group;
     }
 
-    public String getDescription() {
-        return description;
+    public String getVersion() {
+        return version;
     }
 
     public String getPurl() {

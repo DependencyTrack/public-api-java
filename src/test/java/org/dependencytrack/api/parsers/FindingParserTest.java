@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.dependencytrack.publicapi.parsers;
+package org.dependencytrack.api.parsers;
 
-import org.dependencytrack.publicapi.model.Meta;
-import org.dependencytrack.publicapi.model.Project;
+import org.dependencytrack.api.model.Meta;
+import org.dependencytrack.api.model.Project;
 import org.junit.Assert;
 import org.junit.Test;
 
