@@ -49,7 +49,7 @@ public class FindingParserTest {
         Assert.assertNotNull(meta);
         Assert.assertEquals("Dependency-Track", meta.getApplication());
         Assert.assertEquals("3.4.0", meta.getVersion());
-        Assert.assertEquals("2017-04-18T23:31:42.136Z", meta.getTimestamp());
+        Assert.assertEquals("2017-04-18T23:31:42Z", meta.getTimestamp());
         Assert.assertEquals("http://dtrack.example.org", meta.getBaseUrl());
 
         Project project = parser.getProject();
