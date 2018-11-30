@@ -56,7 +56,7 @@ public class FindingParserTest {
 
         Project project = parser.getProject();
         Assert.assertNotNull(project);
-        Assert.assertEquals("122a83b7-ab3b-49fe-a39e-ac9698385bb2", project.getUuid());
+        Assert.assertEquals("ca4f2da9-0fad-4a13-92d7-f627f3168a56", project.getUuid());
         Assert.assertEquals("Acme Example", project.getName());
         Assert.assertEquals("1.0", project.getVersion());
         Assert.assertEquals("A sample application", project.getDescription());
