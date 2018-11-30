@@ -13,7 +13,7 @@ Maven Usage
 <dependency>
     <groupId>org.dependencytrack</groupId>
     <artifactId>public-api-java</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
