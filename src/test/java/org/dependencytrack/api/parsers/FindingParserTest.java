@@ -31,7 +31,7 @@ public class FindingParserTest {
 
     @Test
     public void testFindingsApi() throws Exception {
-        InputStream in = this.getClass().getResourceAsStream("/findings-api.json");
+        InputStream in = this.getClass().getResourceAsStream("/findings.json");
         FindingParser parser = new FindingParser(in).parse();
         Assert.assertEquals(FindingParser.Format.FINDING_API, parser.getFormat());
         Assert.assertNull(parser.getMeta());
@@ -41,7 +41,7 @@ public class FindingParserTest {
 
     @Test
     public void testFindingsPackagingFormat() throws Exception {
-        InputStream in = this.getClass().getResourceAsStream("/findings-packaging-format.json");
+        InputStream in = this.getClass().getResourceAsStream("/example.fpf");
         FindingParser parser = new FindingParser(in).parse();
         Assert.assertEquals(FindingParser.Format.FINDING_PACKAGING_FORMAT, parser.getFormat());
 

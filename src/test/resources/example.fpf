@@ -1,4 +1,5 @@
 {
+  "version": "1.0",
   "meta" : {
     "application": "Dependency-Track",
     "version": "3.4.0",
