@@ -3,7 +3,7 @@
   "meta" : {
     "application": "Dependency-Track",
     "version": "3.4.0",
-    "timestamp": "2017-04-18T23:31:42Z",
+    "timestamp": "2018-11-18T23:31:42Z",
     "baseUrl": "http://dtrack.example.org"
   },
   "project" : {
