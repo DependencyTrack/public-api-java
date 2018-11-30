@@ -5,7 +5,7 @@
     <groupId>org.dependencytrack</groupId>
     <artifactId>public-api-java</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
 
     <name>Dependency-Track Public Java API</name>
     <description>
@@ -49,7 +49,7 @@
         <connection>scm:git:git@github.com:DependencyTrack/public-api-java.git</connection>
         <url>https://github.com/DependencyTrack/public-api-java.git</url>
         <developerConnection>scm:git:git@github.com:DependencyTrack/public-api-java.git</developerConnection>
-        <tag>public-api-java-1.0.1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <issueManagement>
