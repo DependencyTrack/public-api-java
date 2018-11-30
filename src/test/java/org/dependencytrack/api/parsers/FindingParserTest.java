@@ -34,6 +34,7 @@ public class FindingParserTest {
         InputStream in = this.getClass().getResourceAsStream("/findings.json");
         FindingParser parser = new FindingParser(in).parse();
         Assert.assertEquals(FindingParser.Format.FINDING_API, parser.getFormat());
+        Assert.assertNull(parser.getVersion());
         Assert.assertNull(parser.getMeta());
         Assert.assertNull(parser.getProject());
         testFindingsArray(parser.getFindings());
@@ -44,6 +45,7 @@ public class FindingParserTest {
         InputStream in = this.getClass().getResourceAsStream("/example.fpf");
         FindingParser parser = new FindingParser(in).parse();
         Assert.assertEquals(FindingParser.Format.FINDING_PACKAGING_FORMAT, parser.getFormat());
+        Assert.assertEquals("1.0", parser.getVersion());
 
         Meta meta = parser.getMeta();
         Assert.assertNotNull(meta);
