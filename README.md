@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/DependencyTrack/public-api-java.svg?branch=master)](https://travis-ci.org/DependencyTrack/public-api-java)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.dependencytrack/public-api-java/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.dependencytrack/public-api-java)
 [![License](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)][License]
 
 Dependency-Track Public Java API
