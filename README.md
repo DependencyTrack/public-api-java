@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/DependencyTrack/public-api-java.svg?branch=master)](https://travis-ci.org/DependencyTrack/public-api-java)
+[![Build Status](https://github.com/DependencyTrack/public-api-java/workflows/Maven%20CI/badge.svg)](https://github.com/DependencyTrack/public-api-java/actions?workflow=Maven+CI)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.dependencytrack/public-api-java/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.dependencytrack/public-api-java)
 [![License](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)][License]
 
